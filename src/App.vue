@@ -1,9 +1,10 @@
 <template>
 <div id="app">
-  <h1>traducteur</h1>
-  <h5>par vuejs</h5>
-  <trad v-on:formsub="texttraduit"></trad>
-  <tradsortie v-text="textetrad"></tradsortie>
+  <h1 class="jumbotron blue">traducteur</h1>
+  <!-- utilise la fonction texttraduit via formsub de trad.vue , les paramettre de la fonction sont les parametre recuperer dans le emit-->
+  <trad class="text-center "v-on:formsub="texttraduit"></trad>
+  <!-- recupere le texte traduit via tradsortie avec un props -->
+  <tradsortie class="text-center" v-text="textetrad"></tradsortie>
 </div>
 </template>
 <script>
@@ -35,5 +36,8 @@ export default {
 </script>
 
 <style>
-#app {}
+.blue{
+  background: blue;
+  text-align: center;
+}
 </style>

@@ -6,6 +6,7 @@
 
 export default {
   name: 'tradsortie',
+  // recupere les donner de l'appvue
   props:['textetrad']
 }
 </script>
