@@ -2,6 +2,7 @@
 <h2>{{textetrad}}</h2>
 </template>
 
+
 <script>
 
 export default {
